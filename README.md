@@ -27,7 +27,7 @@ The `read` method takes one argument, a callback. When a `write` produces a valu
 
 Multiple `read` or `write` calls may be queued, and they will be called first-in-first-out.
 
-Callbacks for `read` are called before the `write` callbacks. All callbacks are called in the same thread of control as the `read` or `write` call.s
+Callbacks for `read` are called before the `write` callbacks. All callbacks are called in the same thread of control as the `read` or `write` calls.
 
 ## Licence
 
