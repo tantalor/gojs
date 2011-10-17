@@ -13,7 +13,7 @@
 
 The `go` function calls `fn` in a separate thread of control (i.e., as soon as the event loop has a chance).
 
-##* chan
+### chan
 
 ```javascript
   c = chan();
