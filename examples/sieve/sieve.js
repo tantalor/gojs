@@ -1,4 +1,16 @@
 (function () {
+  // imports
+  if (typeof(window) !== 'undefined') {
+    // browser
+    var go = window.go;
+    var chan = window.chan;
+  } if (typeof(require) !== 'undefined') {
+    // commonjs
+    var gojs = require('../../lib/go');
+    var go = gojs.go;
+    var chan = gojs.chan;
+  }
+  
   function integers () {
     var ch = new chan();
     go(function () {
