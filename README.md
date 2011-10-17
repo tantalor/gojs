@@ -2,7 +2,9 @@
 
 **gojs** is an implementation of Go-flavored JavaScript
 
-## go
+## Functions
+
+### go
 
 ```javascript
   function fn () { ... };
@@ -11,7 +13,7 @@
 
 The `go` function calls `fn` in a separate thread of control (i.e., as soon as the event loop has a chance).
 
-## chan
+##* chan
 
 ```javascript
   c = chan();
@@ -28,6 +30,24 @@ The `read` method takes one argument, a callback. When a `write` produces a valu
 Multiple `read` or `write` calls may be queued, and they will be called first-in-first-out.
 
 Callbacks for `read` are called before the `write` callbacks. All callbacks are called in the same thread of control as the `read` or `write` call.s
+
+## Example
+
+### Prime-Sieve
+
+The first 10 primes,
+
+    $ node examples/sieve/node/main.js | head -10
+    2
+    3
+    5
+    7
+    11
+    13
+    17
+    19
+    23
+    29
 
 ## Licence
 
